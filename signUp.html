@@ -1,0 +1,55 @@
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Sign Up Details</title>
+    <!-- You will need to link to the CSS file -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel = "stylesheet" href = "style.css">
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href = "index.html">Home</a></li>
+          <li><a href = "signUp.html">Sign Up</a></li>
+          <li><a href = "gallery.html">Past Events</a></li>
+        </ul>
+      </nav>
+      <img src = "logo.PNG" width = 200 alt = "Logo with organization name and young boy.">
+      <h1>Sign Up Details</h1>
+    </header>
+    <section>
+      <h2>Where do I sign up?</h2>
+      <ul>
+        <li>Location: Riverside Elementary School</li>
+        <li>Dates: September 1st-3rd</li>
+        <li>Time: 10:00 am - 12:30 pm</li>
+      </ul>
+      <img src = "RIVERSIDE.jpg" alt = "Picture of Riverside Elementary School" width = 300>
+    </section>
+    <section>
+      <h2><a id="donate-link" href="https://americanredcross.donordrive.com/campaigns/Kick-for-the-Cure-" target="_blank" rel="noopener noreferrer">DONATE HERE!</a></h2>
+      <script>
+        document.getElementById('donate-link').addEventListener('click', function(event) {
+          const confirmed = confirm('You are about to leave this site to go to the donation page. Continue?');
+          if (!confirmed) {
+            event.preventDefault();
+          }
+        });
+      </script>
+      <p>Kick for the Cure would appreciate any donation to support our cause. You do not have to attend the events to donate!</p>
+      <iframe
+        class="google-form"
+src="https://docs.google.com/forms/d/e/1FAIpQLSd9zZ0tQM5oLh_1mdCL1enWgQzWf5wnDFKn_hxm615DEPiCuA/viewform?embedded=true"
+        width="640" height="983" style=border:0;>
+      </iframe>
+    </section>
+    <footer>
+      <p>Kick for the Cure by Laila A. This page was created by Safa M for Kick for the Cure.</p>
+    </footer>
+  </body>
+  </html>
